@@ -1,2 +1,63 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>pharmacy</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+		
+		
+		
+	</head>
+	<body>
+			<body>
+		<div class="container text-center">
+			
+			<i class="fas fa-comment-medical" id="farmaceut"></i>
+			<nav>
+				<ul id="menu">
+					<li><a id="med" href="#" onclick="medicinesProducts()">Отпустить ЛС</a></li>
+					<li><a id="cons" href="#" onclick="medicinesHelp()">Проконсультировать</a><li>
+					<li><a id="technics"  href="#" onclick="medicinesTechnics()">Отпустить ИМН</a></li>
+				</ul>
+			</nav>
+			
+		<button id="farm" onclick="newUser()">Обслужить</button>
+			
+			<p>Всего обслужено <span id="totalServed">0</span></p>
+			<hr class="hr">
 
-jhjjhk
+			
+		</div>
+		<div class="user text-center">
+			<button id="turn" onclick="queueGrowth()">Купить ЛС</button>
+				<p>Всего в очереди: <span id="fullOrderAmount">0</span></p>
+
+			<button id="medicalEquipment" onclick="buyMedical()">Купить ИМН</button>
+			<div>
+				<p>Всего в очереди: <span id="turnForTechnology">0</span></p>
+
+			<button id="userConsultation" onclick="consultation()">Получить консультацию</button>
+				<p>Всего в очереди: <span id="turnForConsultation">0</span></p>
+				<i class="fas fa-users" id="user"></i>
+				
+
+			
+			
+			
+
+
+			</div>
+		</div>
+
+
+
+
+
+		<script src="jquery-3.4.1.min.js"></script>
+		<script src="main.js"></script>
+		<script src="https://kit.fontawesome.com/e71808ae1d.js" crossorigin="anonymous"></script>
+		
+	</body>
+	</html>
