@@ -1,0 +1,24 @@
+body {
+	background: url(img/apoteka.jpg) no-repeat center top/ cover;
+	display: block;
+	width: 100% 
+}
+#farmaceut,
+#user {
+	text-align: center;
+	font-size: 70px;
+	color: #fff;
+}
+.hr {
+background-color: #fff;
+height: 3px;
+
+}
+#user{
+	font-size: 70px;
+	color: red;
+}
+p {
+	font-size: 30px;
+}
+
