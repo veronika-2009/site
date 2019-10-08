@@ -1,61 +1,52 @@
-let queue=[];
-let orderNumber = 1;
-let served = 1;
-let numbers = document.getElementById('totalServed');
+let modal = document.getElementById("myModal__pharmacist");
+let btn = document.getElementById("farm__btn");
+let span = document.getElementsByClassName("close")[0];
 
-
- function queueGrowth(){
-	 queue.push(orderNumber);
-	$('#fullOrderAmount').text(queue.length);
-	$('#totalLine').text(queue.length);
-	$('#nextOrderNumber').text(queue[0]);
-	orderNumber++;
- }
-
-let purchase = [];
-let medicines = 1;
-
-function buyMedical() {
-	purchase.push(medicines);
-	$('#turnForTechnology').text(purchase.length);
-
+btn.onclick = function(){
+	modal.style.display = "block";
 }
-let help = [];
-let pharmacist = 1;
-
-function consultation() {
-	help.push(pharmacist);
-	$('#turnForConsultation').text(help.length);
-
+span.onclick = function(){
+	modal.style.display = "none";
 }
-
-
-function medicinesProducts() {
-	queue.shift(orderNumber);
-	$('#fullOrderAmount').text(queue.length);
-	let tmp = '';
-	for (let i=0; i<=queue.length; i++){
-		tmp= tmp + i +'';
-	    numbers.innerHTML = tmp;
+window.onclick = function(event){
+	if (event.target == modal){
+		modal.style.display = "none";
 	}
-
-}
-function medicinesTechnics() {
-	purchase.shift(medicines);
-	$('#turnForTechnology').text(purchase.length);
-	//$('#totalServed').text(purchase[0]).value;
-
- }
-   function medicinesHelp() {
- 	help.shift(pharmacist);
-	$('#turnForConsultation').text(help.length);
 }
 
 
+let modalPatient = document.getElementById("myModal__patient");
+let btnPatient = document.getElementById("patient_btn");
+let spanPatient = document.getElementsByClassName("close2")[0];
 
- function newUser() {
- 	let element = document.getElementById('user');
- 	let link = document.createElement('i');
- 	link.innerHTML = '<i class="fas fa-users" id="user"></i>';
- 	element.appendChild(link);
- }
+btnPatient.onclick = function(){
+	modalPatient.style.display = "block";
+}
+spanPatient.onclick = function(){
+	modalPatient.style.display = "none";
+}
+window.onclick = function(event){
+	if (event.target == modalPatient){
+		modalPatient.style.display = "none";
+	}
+}
+
+
+let turn = [];
+//let man = document.getElementById('user2');
+let mimg = document.createElement('img');
+mimg.setAttribute('src', 'man2.png');
+
+
+let turn_patientConsult = document.getElementById('btn__patient-consult');
+let turn_patientMedicine = document.getElementById('btn__patient-medicine');
+let turn_patientTechnics = document.getElementById('btn__patient-technics');
+
+turn_patientConsult.onclick = function(){
+	turn.push(mimg);
+	document.body.appendChild(turn[0]);
+	
+}
+
+
+

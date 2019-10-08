@@ -4,60 +4,64 @@
 		<meta charset="UTF-8">
 		<title>pharmacy</title>
 		<link rel="stylesheet" type="text/css" href="main.css">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		
-		
-		
 		
 	</head>
-	<body>
-			<body>
-		<div class="container text-center">
+
+<body>
 			
-			<i class="fas fa-comment-medical" id="farmaceut"></i>
-			<nav>
-				<ul id="menu">
-					<li><a id="med" href="#" onclick="medicinesProducts()">Отпустить ЛС</a></li>
-					<li><a id="cons" href="#" onclick="medicinesHelp()">Проконсультировать</a><li>
-					<li><a id="technics"  href="#" onclick="medicinesTechnics()">Отпустить ИМН</a></li>
-				</ul>
-			</nav>
-			
-		<button id="farm" onclick="newUser()">Обслужить</button>
-			
-			<p>Всего обслужено <span id="totalServed">0</span></p>
+	<div class="container">
+		<div class="pharmacist">
+			<img src="man2.png" width="50px">
+			<button id="farm__btn">Обслужить</button>
+			<p>Информация:<span id="totalServed"><br />0</span></p>
+			<br />
+			<div class="modal" id="myModal__pharmacist">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<h2>Выберите очередь для обслуживания!</h2>
+					<button>Проконсультировать</button>
+					<button>Отпустить ЛС</button>
+					<button>Отпустить ИМН</button>
+				</div>
+			</div>
+
+		</div>
 			<hr class="hr">
 
-			
-		</div>
-		<div class="user text-center">
-			<button id="turn" onclick="queueGrowth()">Купить ЛС</button>
-				<p>Всего в очереди: <span id="fullOrderAmount">0</span></p>
-
-			<button id="medicalEquipment" onclick="buyMedical()">Купить ИМН</button>
-			<div>
-				<p>Всего в очереди: <span id="turnForTechnology">0</span></p>
-
-			<button id="userConsultation" onclick="consultation()">Получить консультацию</button>
-				<p>Всего в очереди: <span id="turnForConsultation">0</span></p>
-				<i class="fas fa-users" id="user"></i>
-				
-
-			
-			
-			
-
-
+		<div class="patient">
+			<img id="user2" src="girl.png">
+			<img id="user3" src="man.png">
+			<img id="user4" src="student.png">
+			<div class="modal2" id="myModal__patient">
+				<div class="modal-content">
+					<span class="close2">&times;</span>
+					<h2>Выберите очередь!</h2>
+					<button id="btn__patient-consult">Пoлучить консультацию</button>
+					<button id="btn__patient-medicine">Купить ЛС</button>
+					<button id="btn__patient-technics">Купить ИМН</button>
+				</div>
 			</div>
+			<button id="patient_btn">Встать в очередь</button>
+			
 		</div>
+				
+					
+	</div>
 
 
 
 
 
-		<script src="jquery-3.4.1.min.js"></script>
-		<script src="main.js"></script>
-		<script src="https://kit.fontawesome.com/e71808ae1d.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="main.js"></script>
 		
-	</body>
-	</html>
+</body>
+</html>

@@ -1,24 +1,75 @@
 body {
 	background: url(img/apoteka.jpg) no-repeat center top/ cover;
 	display: block;
-	width: 100% 
+	width: 100%;
+	font-family: sans-serif;
+	font-size: 20px; 
 }
-#farmaceut,
-#user {
-	text-align: center;
-	font-size: 70px;
-	color: #fff;
-}
-.hr {
-background-color: #fff;
-height: 3px;
+.pharmacist {
+	padding-left: 550px;
+	padding-top: 50px;
 
 }
-#user{
-	font-size: 70px;
-	color: red;
+#farm,
+#patient_btn {
+	padding: 10px;
+	font-family: sans-serif;
+	font-size: 20px;
+	cursor: pointer;
 }
-p {
-	font-size: 30px;
+.patient img {
+	width: 50px;
+	padding: 100px;
+	cursor: pointer;
+	margin-bottom: -200px;
 }
+#patient_btn {
+display: block;
+margin-left: 550px;
+margin-top: 200px;
+}
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 9000;
+	left: 230px;
+	margin-bottom: 200px;
+	padding-bottom: 200px;
+	width: 70%;
+	height: 70%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0,.8);
+}
+.modal-content {
+	background-color: #fefefe;
+	margin: 5% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 50%;
+}
+.close,
+.close2 {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	cursor: pointer;
 
+}
+.modal2 {
+	display: block;
+	display: none;
+	position: fixed;
+	z-index: 9000;
+	left: 230px;
+	margin-bottom: -500px;
+	padding-bottom: -200px;
+	width: 70%;
+	height: 70%;
+	overflow: auto;
+	float: left;
+	background-color: rgba(0, 0, 0,.8);
+}
+.patient {
+	display: block;
+}
