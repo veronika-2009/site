@@ -13,15 +13,13 @@
 		<div class="pharmacist">
 			<img src="man2.png" width="50px">
 			<button id="farm__btn">Обслужить</button>
-			<p>Информация:<span id="totalServed"><br />0</span></p>
-			<br />
 			<div class="modal" id="myModal__pharmacist">
 				<div class="modal-content">
 					<span class="close">&times;</span>
 					<h2>Выберите очередь для обслуживания!</h2>
-					<button>Проконсультировать</button>
-					<button>Отпустить ЛС</button>
-					<button>Отпустить ИМН</button>
+					<button id="btn__pharmacist-consult">Проконсультировать</button>
+					<button id="btn__pharmacist-medicine">Отпустить ЛС</button>
+					<button id="btn__pharmacist-technics">Отпустить ИМН</button>
 				</div>
 			</div>
 
@@ -30,8 +28,11 @@
 
 		<div class="patient">
 			<img id="user2" src="girl.png">
+			<div id="pacient1"></div>
 			<img id="user3" src="man.png">
+			<div id="pacient2"></div>
 			<img id="user4" src="student.png">
+			<div id="pacient3"></div>
 			<div class="modal2" id="myModal__patient">
 				<div class="modal-content">
 					<span class="close2">&times;</span>
