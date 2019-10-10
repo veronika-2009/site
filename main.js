@@ -77,7 +77,10 @@ turn_pharmacistConsult.onclick = function(){
 	let served = document.createElement('img');
     served.setAttribute('src', 'man2.png');
 	turn.shift(served);
-	document.getElementById('pacient1').remove(served);
+
+	let pacientsDiv = document.getElementById('pacient1');
+	let child = pacientsDiv.lastElementChild;
+	pacientsDiv.removeChild(child);
 }
 
 
